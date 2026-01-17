@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: store
+  jackson:
+    time-zone: America/El_Salvador
+  datasource:
+    url: jdbc:postgresql://localhost:5432/name_db
+    username: username
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate.ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+jwt:
+  private-key: classpath:private.key
+  public-key: classpath:public.key
+  access-token-expiration: 60 # minutes
+  refresh-token-expiration: 1440 # minutes = 1 day
+
+app:
+  cors: http://localhost:3000,http://0.0.0.0:3000,http://domain.local
