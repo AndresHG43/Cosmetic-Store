@@ -38,7 +38,7 @@
 - JDK 25
 - PostgreSQL 17
 - NginX 1.27
-- SpringBoot 3.5.9
+- SpringBoot 4.0.2
 
 ### Useful commands 
 - `docker compose down -v --rmi all --remove-orphans` for completly drop of the containers

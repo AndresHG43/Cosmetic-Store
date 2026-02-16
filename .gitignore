@@ -21,5 +21,6 @@ srcyarn-error.log
 .vscode
 
 application.yml
+application.yaml
 private.key
 public.key
